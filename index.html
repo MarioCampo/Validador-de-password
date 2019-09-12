@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validador Password</title>
+</head>
+<body>
+    <h1>Validador de password</h1>
+    <div>
+        <p>Este validador de password es un programa que valida la coincidencia de reglas especificas
+            cuando se digita una contraseña. Por ejemplo, la longitud mínima o la composición de 
+            caracteres que debe tener.
+        </p>
+    </div>
+    <div>
+        <p>Para esta ocasión, la validación de password esta compuesta por las siguientes reglas:</p>
+        <ol>
+            <li>Mínima longitud de 5 caracteres</li>
+            <li>Máxima longitud de 10 caracteres</li>
+            <li>Debe contener al menos una letra en mayúscula</li>
+            <li>Debe contener al menos un número</li>
+            <li>Debe contener al menos un carácter especial (Por ejemplo: &, +, @, $, #, %, etc)</li>
+            <li>No debe contener espacios</li>
+        </ol>
+    </div>
+    <div>
+        <p>Escribe en el siguiente cuadro de texto una contraseña y valida si cumple
+            con las reglas anteriores.
+        </p>
+        <div>
+            <form action="#">
+                <div>
+                    <label for="inputPass">Contraseña: </label>
+                    <input type="password" name="inputPass" id="inputPass"/>
+                    <input type="submit" value="Comprobar" onclick="comprobar(this.form)">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
